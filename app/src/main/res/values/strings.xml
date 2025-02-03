@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Firebase App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signin_background_image">signin background image</string>
+    <string name="do_you_forgot_your_password">Do you forgot your password?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign-Up</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign-In</string>
+    <string name="register">Register</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="repeat_password">Repeat-password</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+</resources>

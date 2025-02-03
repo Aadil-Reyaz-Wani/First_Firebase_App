@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.myfirebaseapp.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_fragmentSignin"
+            app:destination="@id/fragmentSignin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignin"
+        android:name="com.example.myfirebaseapp.FragmentSignin"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_fragmentSignin_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_fragmentSignin_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/fragmentSignin"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.myfirebaseapp.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_fragmentSignin"
+            app:destination="@id/fragmentSignin"
+            app:popUpTo="@id/signupFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myfirebaseapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentSignin"
+            app:destination="@id/fragmentSignin"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
